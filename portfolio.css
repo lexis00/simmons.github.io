@@ -1,0 +1,64 @@
+
+.project_gallery { 
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+h2 {
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+img {
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+} 
+
+figcaption {
+    margin-left: 13px;
+}
+
+
+body {
+    font-family: Raleway;
+    background-color: rgba(0, 0, 0, 0.954);
+    color: rgba(150, 201, 255, 0.849); 
+}
+
+h1 {
+    text-align: center; /* Centers the <h1> text horizontally */
+    font-weight: 400;
+}
+
+
+#container {
+    position: absolute; /* Allows precise positioning of the element */
+    right: 0;           /* Moves the container to the far right */
+    top: 0;             /* Aligns it to the top */
+    padding-right: 20px; /* Adds a little padding to keep it away from the edge */
+}
+
+#container h3 {
+    font-size: small;
+    font-style: italic;
+}
+
+
+/** link edits **/
+a {
+    text-decoration: none;
+    color: rgba(150, 201, 255, 0.849); 
+}
+
+a:hover {
+    color: rgba(0, 119, 255, 0.824);
+}
+
+a:visited {
+    color: rgba(255, 255, 255, 0.865);
+}
+

@@ -1,0 +1,173 @@
+.container_content {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between the two divs */
+    align-items: center; /* Aligns the content vertically */
+    gap: 20px; /* Optional: adds space between the two divs */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+ .bubble-border {
+    border: 2px  rgb(35, 141, 254);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(150, 201, 255, 0.849); 
+    padding: 20px; /* Space inside the border */
+    margin: 20px; /* Space outside the border */
+    background-color: rgba(10, 10, 10, 0.84);
+    margin-top: 0;
+}
+
+/** div class image edits**/
+.image {
+    padding: 100px;
+    border: 2px rgb(35, 141, 254);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(150, 201, 255, 0.849); 
+    padding: 10px;
+    background-color: rgba(10, 10, 10, 0.84);
+    margin: auto;
+    margin-top: 0;   
+}
+
+.image img {
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.image h3 {
+    font-weight: 500;
+
+}
+
+.image h4 {
+    font-weight: 480;
+}
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    margin-right: 300px;
+    margin-left: 300px;
+} 
+
+
+#container h3 {
+    display: inline-block; 
+    justify-content: center;
+    margin: 50px;
+    margin-top: 20px;
+    font-family: Raleway;
+    font-weight: 200;
+}
+
+body{
+    font-family: Raleway;
+    background-color: rgba(0, 0, 0, 0.954);
+    color: rgba(150, 201, 255, 0.849); 
+}
+
+
+#h1 a {
+    margin: auto;
+    margin-left: 50px;
+    padding: 2px 2px;
+    text-decoration: none; 
+}
+
+input[type="button"] {
+    margin-right: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-color: rgba(87, 87, 87, 0.849); 
+    background-color: rgba(20, 20, 20, 0.849); 
+    color: rgba(201, 201, 201, 0.916);
+    font-family: Raleway;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgb(0, 0, 0);  
+}
+
+/** link edits**/
+a {
+    text-decoration: none;
+    color: rgba(150, 201, 255, 0.849); 
+}
+
+a:hover {
+    color: rgba(0, 119, 255, 0.824);
+}
+
+a:visited {
+    color: rgba(255, 255, 255, 0.865);
+}
+
+/** header edits**/
+header {
+    position: relative; 
+    padding: 10px; 
+}
+
+
+header h1 {
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    font-family: Raleway;
+    font-weight: 550;
+  }
+
+  #contact-button {
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+
+
+
+  /* Rotating Cube CSS */
+  .cube-wrapper {
+    perspective: 800px;
+    width: 200px;
+    height: 200px;
+    margin: auto; /* Center the cube horizontally */
+    position: relative;
+    top: -300px; /* Move the cube up by 20px */
+    left: 200px;
+}
+
+
+.cube {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: rotate 10s infinite linear; /* Rotating animation */
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(138, 192, 250, 0.849);
+    border: 1px solid #000000;
+    line-height: 200px; /* Adjust to vertically center text */
+    text-align: center; /* Center text horizontally */
+    font-size: 20px; /* Adjust text size */
+    font-family: Arial, sans-serif; /* Adjust font */
+    color: #333; /* Adjust text color */
+}
+
+.front  { transform: rotateY(  0deg) translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.right  { transform: rotateY( 90deg) translateZ(100px); }
+.top    { transform: rotateX( 90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotate {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to   { transform: rotateX(360deg) rotateY(360deg); }
+}
